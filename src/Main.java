@@ -33,12 +33,12 @@ public class Main {
         }
 
         // Bucles
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in); // Leer entrada del usua
         teclado.useLocale(Locale.ENGLISH); // Establecer el separador decimal como el punto
         DecimalFormat df = new DecimalFormat("#.00"); //Formatear a 2 decimales
 
         for (int i = 0; i < 3; i++) {
-            // Leer entrada del usuario
+
             System.out.println("Ingresa la evaluación que le darías a " + nombre + ": ");
 
             while (!teclado.hasNextDouble()) { // Manejar caracteres no numéricos
