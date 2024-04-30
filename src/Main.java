@@ -67,7 +67,7 @@ public class Main {
         }
 
         teclado.close(); // Cerrar el Scanner después de usarlo
-        System.out.println("La media de la película " + nombre + "es "+ df.format(mediaEvaluacionUsuario / contadorEvaluaciones));
+        System.out.println("La media de la película " + nombre + " es "+ df.format(mediaEvaluacionUsuario / contadorEvaluaciones));
     }
 
     public static double obtenerEvaluacion(Scanner teclado) {
