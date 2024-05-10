@@ -1,4 +1,4 @@
-![header](./images/cover.png)
+![header](./images/cover2.png)
 
 # ScreenMatch
 
@@ -30,9 +30,11 @@ Para comenzar a utilizar ScreenMatch, sigue estos pasos simples:
 Para utilizar ScreenMatch, sigue estos pasos:
 
 1. Ejecuta el archivo Main.java en tu entorno de desarrollo Java.
-2. Sigue las instrucciones en la consola para ingresar las evaluaciones para la película.
-3. Ingresa 's' si deseas ingresar otra evaluación o 'n' para terminar y calcular la media.
-4. La aplicación calculará automáticamente la media de las evaluaciones ingresadas y mostrará el resultado.
+2. Sigue las instrucciones en la consola para seleccionar una opción del menú:
+   - Ingresa **1** para registrar una nueva película.
+   - Ingresa **2** para registrar una nueva serie.
+   - Ingresa **9** para salir de la aplicación.
+3. Sigue las indicaciones adicionales que aparezcan en la consola según la opción seleccionada.
 
 ## Estructura del Proyecto
 
@@ -43,9 +45,15 @@ El proyecto consta de un único archivo Java, Main.java, que contiene todo el c�
 screen-match/
 │
 ├── src/ # Directorio principal del código fuente
-│ └── Main.java # Código fuente de la aplicación
-├─ images
-│    └─ cover.png
+│ └── modelo/ #Contiene las clases relacionadas con el modelo de datos.
+│      └── Titulo.java #Clase base que define las propiedades comunes entre películas y series.
+│      └── Pelicula.java #Clase que representa una película y hereda de Titulo.
+│      └── Serie.java: #Clase que representa una serie y hereda de Titulo.
+│ └── Main.java #Clase principal que contiene el punto de entrada de la aplicación y llama a la clase Principal para mostrar un menú interactivo.
+│ └── Principal.java #Clase que gestiona la lógica del menú interactivo y utiliza las clases Pelicula y Serie del paquete modelo para registrar nueva información.
+├─ images/
+│    └── cover.png
+│    └── cover2.png
 └── README.md # Documentación principal del proyecto
 
 ```
@@ -57,7 +65,3 @@ Este proyecto fue creado como parte de mi aprendizaje inicial en Java. Agradezco
 ## Demostración
 
 Para ver una demostración de cómo funciona el proyecto, puedes ver el siguiente video:
-
-https://github.com/Jerick97/screen-math-inmersion-java/assets/108478905/cff0b8bc-75b4-4f34-bcfa-38083fa27ee9
-
-
