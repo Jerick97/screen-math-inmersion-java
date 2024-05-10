@@ -1,3 +1,4 @@
+import calculos.CalculadoraDeTiempo;
 import modelo.Pelicula;
 import modelo.Serie;
 
@@ -6,6 +7,7 @@ import java.util.Scanner;
 public class Principal {
     private Pelicula peliculaUsuario = new Pelicula();
     private Serie serieUsuario = new Serie();
+    private CalculadoraDeTiempo calculadoraDeTiempo = new CalculadoraDeTiempo();
     public void muestraElMenu(){
         int opcion = 0;
         Scanner teclado = new Scanner(System.in);
@@ -15,6 +17,7 @@ public class Principal {
                  
                  1) Registrar nueva película
                  2) Registrar nueva serie
+                 3) Calculadora de tiempo
                  9) Salir
                  
                   """;
@@ -60,6 +63,10 @@ public class Principal {
                     serieUsuario.setEpisodiosPorTemporadas(episodiosPorTemporada);
                     serieUsuario.setDuracionEnMinutosPorEpisodios(minutosPorEpisodio);
                     serieUsuario.muestraFichaTecnica();
+                    break;
+                case 3:
+                    System.out.println("Tiempo que necesitas para hacer un maratón con tus títulos favoritos "
+                            + calculadoraDeTiempo.getTiempoTotal() + " minutos");
                     break;
                 case 9:
                     System.out.println("Saliendo del programa");

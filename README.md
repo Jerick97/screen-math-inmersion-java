@@ -33,18 +33,21 @@ Para utilizar ScreenMatch, sigue estos pasos:
 2. Sigue las instrucciones en la consola para seleccionar una opción del menú:
    - Ingresa **1** para registrar una nueva película.
    - Ingresa **2** para registrar una nueva serie.
+   - Ingresa **3** para calcular el tiempo necesario para visualizar la serie y películas.
    - Ingresa **9** para salir de la aplicación.
 3. Sigue las indicaciones adicionales que aparezcan en la consola según la opción seleccionada.
 
 ## Estructura del Proyecto
 
-El proyecto consta de un único archivo Java, Main.java, que contiene todo el código necesario para ejecutar la aplicación.
+Esta sección describe la estructura organizada del proyecto, detallando la ubicación y función de cada directorio y archivo clave. Esta guía tiene como objetivo facilitar la navegación por el código fuente y comprender mejor la organización general del proyecto.
 
 ```
 
 screen-match/
 │
 ├── src/ # Directorio principal del código fuente
+│ └── calculos/ #Paquete que contiene las clases relacionadas con el modelo de datos
+│      └── CalculadoraDeTiempo.java #Clase base que permite calcular y acumular el tiempo total de visualización de películas y series.
 │ └── modelo/ #Contiene las clases relacionadas con el modelo de datos.
 │      └── Titulo.java #Clase base que define las propiedades comunes entre películas y series.
 │      └── Pelicula.java #Clase que representa una película y hereda de Titulo.
